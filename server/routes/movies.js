@@ -81,25 +81,21 @@ router.get("/", verify, async (req, res) => {
 router.get("/random", verify, async (req, res) => {
   const type = req.query.type;
   let movie;
-  if (req.user.isAdmin) {
-    try {
-      if (type === "series") {
-        movie = await Movie.aggregate([
-          { $match: { isSeries: true } },
-          { $sample: { size: 1 } },
-        ]);
-      } else {
-        movie = await Movie.aggregate([
-          { $match: { isSeries: false } },
-          { $sample: { size: 1 } },
-        ]);
-      }
-      res.status(200).json(movie);
-    } catch (err) {
-      res.status(500).json(err);
+  try {
+    if (type === "series") {
+      movie = await Movie.aggregate([
+        { $match: { isSeries: true } },
+        { $sample: { size: 1 } },
+      ]);
+    } else {
+      movie = await Movie.aggregate([
+        { $match: { isSeries: false } },
+        { $sample: { size: 1 } },
+      ]);
     }
-  } else {
-    res.status(403).json("you are allowed!");
+    res.status(200).json(movie);
+  } catch (err) {
+    res.status(500).json(err);
   }
 });
 
