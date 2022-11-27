@@ -1,7 +1,5 @@
 # This section contains the source code of frontend section of Netflix Clone
 
-<hr>
-
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
