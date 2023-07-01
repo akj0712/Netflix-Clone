@@ -3,6 +3,12 @@
 ## Demo 🌐
 ### Click [here](https://netflix-clone-akj.netlify.app/) to use the app! or you can walk around the [Snippets](https://github.com/akj0712/Netflix-Clone#snippets) of the project for a quick glance.
 
+```
+Use this dummy account to sign in and access all the website functionality:
+Email: test1@test.com
+Password: 123456
+```
+
 Since I have deployed the backend on free-plan of [render](https://render.com/). Web Services on the free plan are automatically spun down after 15 minutes of inactivity. This can cause a response delay of up to 30 seconds for the first request that comes in after a period of inactivity. So users are requested to please have some patience for the first request after that it's going to be a buttery smooth ride.
 
 ## Introduction 👋
