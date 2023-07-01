@@ -4,7 +4,7 @@
 ### Click [here](https://netflix-clone-akj.netlify.app/) to use the app! or you can walk around the [Snippets](https://github.com/akj0712/Netflix-Clone#snippets) of the project for a quick glance.
 
 ```
-Use this dummy account to sign in and access all the website functionality:
+Use this dummy account to sign in and access all the website's functionality:
 Email: test1@test.com
 Password: 123456
 ```
